@@ -1,0 +1,183 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=utf8">
+<META http-equiv="Content-Style-Type" content="text/css">
+<META name="GENERATOR" content="IBM WebSphere Homepage Builder Version 6.0.2.1 for Windows">
+<TITLE></TITLE>
+</HEAD>
+<BODY background="orizuru2.gif">
+<DIV align=center><BR>
+<B style="COLOR: #666666"><FONT size="+3">kensaku</FONT></B></DIV>
+<TABLE cellpadding="2" width="100%">
+<TBODY>
+<TR>
+      <TD bgcolor="#000000">　<FONT color=yellow><IMG src="hana_gle.gif" width="20" height="20" border="0"></FONT> <FONT 
+color=#ffffff><B>プログラムの特徴とサンプル</B></FONT> </TD>
+    </TR>
+  </TBODY>
+</TABLE>
+<UL>
+  <LI>住所録検索データベースです。氏名、住所、電話、携帯電話、備考の欄がありCSV形式のデータを読み込み検索して表示します。
+  <LI>サンプルは以下にあります。<BR>
+  <TABLE border="1">
+    <TBODY>
+      <TR>
+        <TD><A href="kensaku.htm" target="_blank">Sample</A></TD>
+      </TR>
+    </TBODY>
+  </TABLE>
+</UL>
+<P><BR>
+<BR>
+</P>
+<TABLE cellpadding="2" width="100%">
+<TBODY>
+<TR>
+      <TD bgcolor="#000000">　<FONT 
+color=#ffffff><B><IMG src="hana_gle.gif" width="20" height="20" border="0"> プログラムの入手</B></FONT> </TD>
+    </TR>
+  </TBODY>
+</TABLE>
+<UL>
+  <LI>下の書庫（圧縮）ファイルをクリックしてダウンロードします。
+  <TABLE border=0 cellSpacing=1 cellPadding=1>
+    <TBODY>
+      <TR>
+        <TH bgColor=#ffffac>Ver: 1.0</TH>
+      </TR>
+      <TR>
+        <TD align="center"><A href="kensaku.zip"><IMG src="1186.png"  width="197" height="133" border="0"><BR>
+        kensaku</A></TD>
+      </TR>
+    </TBODY>
+  </TABLE><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- cgi -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7308533172924858"
+     data-ad-slot="5535819729"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+  <BR>
+  <LI>ダウンロード後、解凍 します。</LI>
+</UL>
+<UL>
+  <LI>解凍すると以下のファイルが展開されます。
+  <P>kensaku.cgi<BR>
+  kensaku.htm<BR>
+  README.TXT<BR>
+  ...<BR>
+  </P>
+  </LI>
+</UL>
+<P><BR>
+<BR>
+</P>
+<TABLE cellpadding="2" width="100%">
+<TBODY>
+<TR>
+      <TD bgcolor="#000000">　<FONT color=yellow><IMG src="hana_gle.gif" width="20" height="20" border="0"></FONT> <FONT 
+color=#ffffff><B>プログラムの修正</B></FONT></TD>
+    </TR>
+  </TBODY>
+</TABLE>
+<UL>
+<LI>全体のディレクトリ構成とファイル位置の例は以下のとおりです。（括弧内はパーミッション）
+  <TABLE class=tbl border=0 cellPadding=18 width=450>
+<TBODY>
+<TR>
+<TD>【ファイル構成】
+        <PRE>public_html / index.html(トップページ)
+    |
+    +-- kensaku / kensaku.cgi    [755]
+               
+
+         </PRE>
+        </TD>
+      </TR>
+    </TBODY>
+  </TABLE>
+  <BR>
+<BR>
+  <LI>kensaku.cgi を エディタ で開いて以下の箇所を修正します。
+  <DL>
+    <DT><SPAN class=red>#!/usr/local/bin/perl</SPAN>
+    <DD>（プロバイダで定められた<B>Perlへのパス</B>を指定します）<BR>
+  </DL>
+  
+  <LI>以上、修正が完了したら所定のファイルをFTP転送し、以下のとおりパーミッションを設定します。
+  
+</UL>
+<P><BR>
+<BR>
+</P>
+<TABLE cellpadding="2" width="100%">
+<TBODY>
+<TR>
+      <TD bgcolor="#000000">　<FONT color=yellow><IMG src="hana_gle.gif" width="20" height="20" border="0"></FONT> <FONT 
+color=#ffffff><B>プログラムの設置</B></FONT></TD>
+    </TR>
+  </TBODY>
+</TABLE>
+<UL>
+  <LI>
+  <TABLE border="1" cellspacing="0" cellpadding="5" width="326">
+    <TBODY>
+      <TR>
+        <TH class="l2" rowspan="2" align="center">ファイル名</TH>
+        <TH class="l2" width="101" align="center">パーミッション</TH>
+        <TH class="l2" rowspan="2" width="91" align="center">転送モード</TH>
+      </TR>
+      <TR>
+        <TD class="l2" width="101" align="center">一般サーバ</TD>
+      </TR>
+      <TR>
+        <TD class=r></TD>
+        <TD class="r" align="center" width="101"></TD>
+        <TD class="r" align="center" width="91"></TD>
+      </TR>
+      <TR>
+        <TD class=r>kensaku.cgi</TD>
+        <TD class="r" align="center" width="101">755 or 705</TD>
+        <TD class="r" align="center" width="91">アスキー</TD>
+      </TR>
+      
+    </TBODY>
+  </TABLE>
+  <BR>
+  <BR>
+  <LI>最後に、 kensaku.htm にリンクまたはアクセスしてください。 <BR>
+  <BR>
+  <DL>
+    <DT><B>【記述例】</B>
+    <DD>http://～～/kensaku/kensaku.htm</DD>
+  </DL>
+  </LI>
+</UL>
+<DIV><BR>
+<BR>
+</DIV>
+<TABLE cellpadding="2" width="100%">
+<TBODY>
+<TR>
+      <TD bgcolor="#000000">　<FONT color=yellow><IMG src="hana_gle.gif" width="20" height="20" border="0"></FONT> <FONT 
+color=#ffffff><B>備考</B></FONT> </TD>
+    </TR>
+  </TBODY>
+</TABLE>
+<UL>
+<LI><FONT color=#008080><B>無し</B></FONT>
+</UL>
+<P><BR>
+<BR>
+</P>
+<DIV align=center>
+<HR>
+</DIV>
+<P align="center"><IMG src="074[1].gif" width="50" height="15" border="0"></P>
+</BODY>
+</HTML>
